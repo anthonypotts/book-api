@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // APOLLO
 import { ApolloProvider } from '@apollo/react-hooks';
@@ -7,8 +8,6 @@ import ApolloClient from 'apollo-boost';
 // PAGES
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
-
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // COMPONENTS
 import Navbar from './components/Navbar';
