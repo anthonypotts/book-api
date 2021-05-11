@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/googlebooks', 
+  process.env.MONGODB_URI || 'mongodb://localhost/book-api', 
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
-    useFindAndModify: true,
+    useFindAndModify: false,
   }
 );
 
